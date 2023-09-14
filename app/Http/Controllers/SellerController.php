@@ -2,18 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Shop;
+use App\Models\Seller;
 use Illuminate\Http\Request;
 
-class ShopController extends Controller
+class SellerController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $shops = Shop::all();
-        return response()->json($shops);
+        $sellers = Seller::all();
+        return response()->json($sellers);
     }
 
     /**
@@ -35,7 +35,7 @@ class ShopController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Shop $shop)
+    public function show(Seller $seller)
     {
         //
     }
@@ -43,7 +43,7 @@ class ShopController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Shop $shop)
+    public function edit(Seller $seller)
     {
         //
     }
@@ -51,7 +51,7 @@ class ShopController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Shop $shop)
+    public function update(Request $request, Seller $seller)
     {
         //
     }
@@ -59,7 +59,7 @@ class ShopController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Shop $shop)
+    public function destroy(Seller $seller)
     {
         //
     }
