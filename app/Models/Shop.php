@@ -10,6 +10,19 @@ class Shop extends Model
     use HasFactory;
 
     protected $fillable = [
-        'id',
+        'shop_id',
+        'code',
+        'success',
+        'extra',
+        'data',
+        'timestamp',
     ];
+
+    protected $casts = [
+        'data' => 'json'
+    ];
+    
+    public $timestamps = false;
+
+    protected $primaryKey = 'shop_id';
 }

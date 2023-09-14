@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Seller;
+use Carbon\Carbon;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -13,6 +14,8 @@ class SellerSeeder extends Seeder
      */
     public function run()
     {
+
+        
         Seller::factory()->create([
             'seller_id' => '9999',
             'message_type' => 0,
@@ -22,7 +25,7 @@ class SellerSeeder extends Seeder
                 'trade_order_line_id' => '12345',
                 'status_update_time' => 1656915866,
             ],
-            'timestamp' => 1656915866,
+            'timestamp' => Carbon::createFromTimestamp(1656915866),
             'site' => 'lazada_sg',
         ]);
     }
