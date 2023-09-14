@@ -23,7 +23,7 @@ class SellerSeeder extends Seeder
                 'order_status' => 'This is a test message',
                 'trade_order_id' => '123456',
                 'trade_order_line_id' => '12345',
-                'status_update_time' => 1656915866,
+                'status_update_time' => Carbon::createFromTimestamp(1656915866)->format('Y-m-d H:i:s'),
             ],
             'timestamp' => Carbon::createFromTimestamp(1656915866),
             'site' => 'lazada_sg',
