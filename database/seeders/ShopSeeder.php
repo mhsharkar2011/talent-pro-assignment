@@ -15,7 +15,7 @@ class ShopSeeder extends Seeder
     public function run()
     {
         Shop::factory()->create([
-            'shop_id' => 124,
+            'shop_id' => 123,
             'code' => 1,
             'success' => 1,
             'extra' => 'shop_id 123 is authorized successfully',
