@@ -12,7 +12,8 @@ class SellerController extends Controller
      */
     public function index()
     {
-        //
+        $sellers = Seller::all();
+        return response()->json($sellers);
     }
 
     /**
