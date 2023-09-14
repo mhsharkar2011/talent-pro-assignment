@@ -29,7 +29,9 @@ class ShopController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $shop = Shop::create($request->all());
+
+        return response()->json($shop,201);
     }
 
     /**
@@ -37,7 +39,7 @@ class ShopController extends Controller
      */
     public function show(Shop $shop)
     {
-        //
+       return response()->json($shop);
     }
 
     /**
@@ -53,7 +55,8 @@ class ShopController extends Controller
      */
     public function update(Request $request, Shop $shop)
     {
-        //
+        $shop->update($request->all());
+        return response()->json($shop);
     }
 
     /**
@@ -61,6 +64,7 @@ class ShopController extends Controller
      */
     public function destroy(Shop $shop)
     {
-        //
+        $shop->delete();
+        return response()->json(null,204);
     }
 }

@@ -9,7 +9,13 @@ class Seller extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
+    protected $guarded = [
         'id',
     ];
+
+    protected $casts = [
+        'data' => 'json',
+    ];
+    
+    public $timestamps = false;
 }
