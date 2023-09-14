@@ -1,20 +1,19 @@
-# Talent Pro - ToDo
+# Talent Pro - ToDo Assignment
 
 ## Getting started
-cd existing_repo
-git remote add origin https://gitlab.com/assignment2023/talent-pro-todo.git
-git branch -M main
-git push -uf origin main
+- cd existing_repo
+- git remote add origin https://gitlab.com/assignment2023/talent-pro-todo.git
+- git branch -M main
+- git push -uf origin main
 
-## To test the project 
 - composer install
 - php artisan migrate --seed
 - we can use postman to test the payload
 
 
-## API end points
+## API End Points
 
-### SHOPS end point
+### Shops APIs
 
 - Shop - LIST   >> http://host_name/api/shops
 - Shop - SHOW   >> http://host_name/api/shops/{id}
@@ -22,7 +21,7 @@ git push -uf origin main
 - Shop - UPDATE >> http://host_name/api/shops/{id}
 - Shop - DELETE >> http://host_name/api/shops{id}
 
-### SELLER end point
+### Seller APIs
 
 - seller - LIST   >> http://host_name/api/sellers
 - seller - SHOW   >> http://host_name/api/sellers/{id}
